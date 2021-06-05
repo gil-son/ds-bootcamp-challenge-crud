@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dschallenge.crud.entities.Client;
+import com.dschallenge.crud.dto.ClientDTO;
 import com.dschallenge.crud.services.ClientService;
 
 @RestController
@@ -20,8 +20,8 @@ public class ClientResource {
 	ClientService clientService;
 	
 	@GetMapping
-	public ResponseEntity<List<Client>> findAll(){
-		List<Client> list = clientService.findAll();
+	public ResponseEntity<List<ClientDTO>> findAll(){
+		List<ClientDTO> list = clientService.findAll();
 		return ResponseEntity.ok().body(list);
 	}
 }
