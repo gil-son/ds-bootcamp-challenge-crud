@@ -12,16 +12,19 @@
 <p> The Bootcamp promoted by <a href="https://devsuperior.com.br/"> DevSuperior <a/> which aims to
 help students and programming professionals to enter or re-enter their careers.</p>
 
+<p> Challenge steps: </p>
 
 <ul>
-	<li>* [x] Entity</li>
+  <li>* [x] Entity</li>
   <li>* [x] Repository</li>
-	<li>* [x] Service</li>
+  <li>* [x] Service</li>
   <li>* [x] Resource </li>
   <li>* [x] H2 Database </li>
+  <li>* [ ] Database File </li>
   <li>* [ ] Resource Exception</li>
   <li>* [ ] Service Exception</li>
   <li>* [ ] DTO</li>
+  <li>* [ ] Pagination</li>
   <li>* [ ] CRUD</li>
 </ul>
 
