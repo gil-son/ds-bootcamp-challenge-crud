@@ -20,10 +20,10 @@ help students and programming professionals to enter or re-enter their careers.<
   <li>* [x] Service</li>
   <li>* [x] Resource </li>
   <li>* [x] H2 Database </li>
-  <li>* [ ] Database File </li>
+  <li>* [x] Database File </li>
+  <li>* [x] DTO</li>
   <li>* [ ] Resource Exception</li>
   <li>* [ ] Service Exception</li>
-  <li>* [ ] DTO</li>
   <li>* [ ] Pagination</li>
   <li>* [ ] CRUD</li>
 </ul>
@@ -144,7 +144,30 @@ of the data.
 
 </p>
 
+## Database code
 
+```
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('José de Souza','555.555.458-21',400,NOW()-20*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Felipe Lima','458.555.458-65',400,NOW()-35*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Luana Pereira','287.333.458-12',400,NOW()-18*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Carol Castro','728.555.845-39',400,NOW()-25*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Joaquim dos Santo','228.555.152-70',400,NOW()-30*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Fernanda Aguiar','448.335.583-11',400,NOW()-27*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Carlos Drummond','628.555.127-44',400,NOW()-22*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Tereza Flores','828.255.558-91',400,NOW()-44*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Cassandra Ferreira','228.559.154-33',400,NOW()-26*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Bruno Lira','528.255.958-29',400,NOW()-35*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('André de Souza','428.505.452-28',400,NOW()-20*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Emerson Lima','842.515.454-35',400,NOW()-34*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Clara Pereira','481.334.351-42',400,NOW()-48*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Aline Castro','225.255.645-19',400,NOW()-23*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Bernardo dos Santo','728.255.151-60',400,NOW()-50*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Felipa Aguiar','548.235.183-41',400,NOW()-47*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Caio Drummond','928.725.227-34',400,NOW()-26*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Vanessa Flores','328.255.158-31',400,NOW()-45*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Suelen Ferreira','428.259.254-33',400,NOW()-23*365, 1, NOW());
+INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALUES('Leon Lira','328.455.458-89',400,NOW()-32*365, 1, NOW());
+```
 
 ## Source
 
