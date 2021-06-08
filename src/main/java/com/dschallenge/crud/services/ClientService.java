@@ -2,6 +2,7 @@ package com.dschallenge.crud.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.dschallenge.crud.dto.ClientDTO;
 import com.dschallenge.crud.entities.Client;
 import com.dschallenge.crud.repositories.ClientRepository;
+import com.dschallenge.crud.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ClientService {
@@ -37,4 +39,34 @@ public class ClientService {
 		*/
 		return listDTO;
 	}
+	
+	
+	@Transactional(readOnly = true)
+	public ClientDTO findById(Long id) {
+		Optional<Client> obj = clientRepository.findById(id);
+		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+		
+		return new ClientDTO(entity);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
