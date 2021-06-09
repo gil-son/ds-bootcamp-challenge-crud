@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -74,8 +76,21 @@ public class ClientService {
 	}
 	
 	
-	
-	
+	@Transactional
+	public ClientDTO update(Long id, ClientDTO dto) {
+		try {
+			Client entity = clientRepository.getOne(id);
+			entity.setName(dto.getName()); // Client received the value
+			entity.setCpf(dto.getCpf());
+			entity.setIncome(dto.getIncome());
+			entity.setBirthDate(dto.getBirthDate());
+			entity.setChildren(dto.getChildren());
+			entity = clientRepository.save(entity);
+			return new ClientDTO(entity);
+		}catch(EntityNotFoundException e) {
+			throw new ResourceNotFoundException("Id not found it: "+id);
+		}
+	}
 	
 	
 	
