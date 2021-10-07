@@ -172,6 +172,7 @@ INSERT INTO tb_client (name, cpf, income, birth_date, children, created_At) VALU
 ## Source
 
 <ul>
-  <li><a href="https://devsuperior.com.br/">DevSuperior</a></li>
+  <li><a href="https://github.com/gil-son/dscatalog-bootcamp/blob/main/info/01.%20CRUD.md">Dev Superior - dscatalog-bootcamp</a></li>
 </ul>
+
 
